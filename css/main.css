@@ -1,0 +1,30 @@
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+H1{
+  color: #4DC3F9;
+  font-size: 46px;
+}
+
+Button{
+  background: #4DC3F9;
+  color: #FFFFFF;
+  font-size: 21px;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+card-program{
+  background-color: #F8F8F8;
+  width: 490px;
+  height: 218px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+logo{
+  width: 50px;
+  height: 50px;
+}
