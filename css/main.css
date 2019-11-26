@@ -251,6 +251,10 @@
     width: 100%;
     }
 
+  footer h2 {
+    color: white;
+  }
+
   #CTAbottom {
     font-family: Roboto;
     font-size: 21px;
