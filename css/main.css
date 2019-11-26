@@ -1,154 +1,249 @@
 html{
   font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Mono', monospace;
 }
 
-h1{
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 45px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #2D354C;
+body{
+  margin: 10px;
+  width: 100vw;
 }
 
-h2{
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 45px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #2D354C;
-}
+/* responsive 375px*/
+@media all and (min-width: 375px){
+  header {
+    width: 100%;
+  }
 
-#logo{
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: 0%;
-  right: 0.82%;
-  top: 0%;
-  bottom: 0%;
-}
+  #CTAtop{
+    width: 235px;
+    height: 40px;
+    margin: 30px auto;
+    text-decoration: none;
+    background: #4DC3F9;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    display: block;
+  }
 
-#CTAtop{
-  background: #4DC3F9;
-  color: #FFFFFF;
-  font-family: Roboto;
-  font-size: 21px;
-  border-radius: 6px;
-  position: absolute;
-  width: 235px;
-  height: 50px;
-  right: 220px;
-  top: 27px;
-}
+  #logo{
+    width: 150px;
+    margin: 30px auto;
+    display: block;
+  }
 
-p{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #818693;
-}
+  .cohort-picture{
+    width: 100vw;
+    height: 410px;
+    background-image: url("../img/squad.jpg");
+    background-size: cover;
+  }
+
+  .intro-program h1 {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2D354C;
+    }
+
+  h2{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2D354C;
+  }
+
+  #bootcamp-program{
+    padding: 0 35px;
+  }
+
+  .intro-program p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #818693;
+  }
+
+  .card-program{
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 24px;
+    margin-bottom: 35px;
+    width:;
+    height: 230px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-program p:first-child{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /* identical to box height, or 214% */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #EC3A35;
+  }
+
+  .card-program p:nth-child(2){
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px;
+    /* identical to box height, or 94% */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2D354C;
+  }
+
+  .card-program p:last-child{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #818693;
+  }
+
+  #bootcamp-figures{
+    background-color: #4DC3F9;
+    padding: 20px;
+  }
+
+  #bootcamp-figures h2{
+    color: white;
+    padding : 43px;
+  }
+
+  .figures-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .figures-wrapper .figure {
+    flex: 0 0 50%;
+    text-align: center;
+    font-size: 90px;
+    font-family: Roboto mono, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  #bootcamp-figures p{
+    font-family: Roboto Mono;
+    font-style: normal;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 96px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2D354C;
+  }
+
+  #bootcamp-figures span{
+    font-family: Roboto Mono;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #2D354C;
+  }
+
+  #bootcamp-projects{
+    padding : 34px;
+  }
+
+  .card-project{
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+  .project-image{
+    width: 100%;
+    }
+
+  .card-project h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2D354C;
+    margin: 18px 18px 18px 18px;
+    }
+
+  #bootcamp-students{
+    padding: 28px;
+  }
+
+  .student{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    }
 
 
+  .student-name{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    }
 
-.card-program{
-  display: inline-block;
-  text-align: center;
-  background-color: #F8F8F8;
-  width: px;
-  height: px;
-  border-radius: 6px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+  #bootcamp-teachers{
+    background-color: #F8F8F8;
+  }
 
-.card-program p:first-child{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  /* identical to box height, or 214% */
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #EC3A35;
-}
+  .teacher{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    }
 
-.card-program p:nth-child(2){
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 30px;
-  /* identical to box height, or 94% */
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #2D354C;
-}
 
-.card-project{
-  display: inline-block;
-  width: 320px;
-  height: 226px;
-  left: 221px;
-  top: 1716px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  .teacher-name{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    }
 
-}
+  footer{
+    background: #4DC3F9;
+    }
 
-.project-image{
-  width: 320px;
-  height: 180px;
-}
+  #CTAbottom{
+    font-family: Roboto;
+    font-size: 21px;
+    border-radius: 6px;
+    width: 319px;
+    height: 50px;
+    background: #FFFFFF;
+    }
 
-.student{
-  display: inline-block;
-  text-align: center;
-}
+  }
 
-.student-name{
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 35px;
-  align-items: center;
-  text-align: center;
-}
-
-.teacher{
-  display: inline-block;
-  text-align: center;
-}
-
-.teacher-name{
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 35px;
-  align-items: center;
-  text-align: center;
-}
-
-#bootcamp-figures{
-  background-color: #4DC3F9;
-}
-
-#CTAbottom{
-  font-family: Roboto;
-  font-size: 21px;
-  border-radius: 6px;
-  width: 319px;
-  height: 50px;
-  background: #FFFFFF;
-}
+/* Responsive 1440px */
