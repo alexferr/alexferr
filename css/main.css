@@ -3,40 +3,51 @@ html{
   font-family: 'Roboto Mono', monospace;
 }
 
-H1{
+h1{
   font-family: Roboto Mono;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
   line-height: 45px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: -0.02em;
   color: #2D354C;
 }
 
-Button{
+h2{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 45px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #2D354C;
+}
+
+#logo{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0%;
+  right: 0.82%;
+  top: 0%;
+  bottom: 0%;
+}
+
+#CTAtop{
   background: #4DC3F9;
   color: #FFFFFF;
   font-family: Roboto;
   font-size: 21px;
-  width: 300px;
-  height: 70px;
-  border-radius: 10px;
-}
-
-H2{
-  font-family: Roboto Mono;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 45px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #2D354C;
+  border-radius: 6px;
+  position: absolute;
+  width: 235px;
+  height: 50px;
+  right: 220px;
+  top: 27px;
 }
 
 p{
@@ -48,12 +59,50 @@ p{
   color: #818693;
 }
 
+
+
 .card-program{
+  display: inline-block;
+  text-align: center;
   background-color: #F8F8F8;
-  width: 490px;
-  height: 218px;
+  width: px;
+  height: px;
   border-radius: 6px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-program p:first-child{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #EC3A35;
+}
+
+.card-program p:nth-child(2){
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 30px;
+  /* identical to box height, or 94% */
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #2D354C;
+}
+
+.card-project{
+  display: inline-block;
+  width: 320px;
+  height: 226px;
+  left: 221px;
+  top: 1716px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .project-image{
@@ -61,11 +110,45 @@ p{
   height: 180px;
 }
 
-#logo{
-  width: 300px;
-  height: 300px;
+.student{
+  display: inline-block;
+  text-align: center;
+}
+
+.student-name{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+  align-items: center;
+  text-align: center;
+}
+
+.teacher{
+  display: inline-block;
+  text-align: center;
+}
+
+.teacher-name{
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+  align-items: center;
+  text-align: center;
 }
 
 #bootcamp-figures{
   background-color: #4DC3F9;
+}
+
+#CTAbottom{
+  font-family: Roboto;
+  font-size: 21px;
+  border-radius: 6px;
+  width: 319px;
+  height: 50px;
+  background: #FFFFFF;
 }
