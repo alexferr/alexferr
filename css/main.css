@@ -1,17 +1,17 @@
-html{
-  font-family: 'Roboto', sans-serif;
-}
-
-body{
-  margin: 10px;
-  width: 100vw;
-}
-
-/* responsive 375px*/
-@media all and (min-width: 375px){
-  header {
-    width: 100%;
+  html{
+    font-family: 'Roboto', sans-serif;
   }
+
+  body{
+    margin: 10px;
+    width: 100vw;
+  }
+
+  /* responsive 375px*/
+  @media all and (min-width: 375px){
+    header {
+      width: 100%;
+    }
 
   #CTAtop{
     width: 235px;
@@ -91,7 +91,6 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    /* identical to box height, or 214% */
     text-align: center;
     letter-spacing: -0.02em;
     color: #EC3A35;
@@ -103,7 +102,6 @@ body{
     font-weight: 500;
     font-size: 28px;
     line-height: 30px;
-    /* identical to box height, or 94% */
     text-align: center;
     letter-spacing: -0.02em;
     color: #2D354C;
@@ -120,7 +118,7 @@ body{
     color: #818693;
   }
 
-  #bootcamp-figures{
+  #bootcamp-figures {
     background-color: #4DC3F9;
     padding: 20px;
   }
@@ -145,7 +143,7 @@ body{
     margin-bottom: 20px;
   }
 
-  #bootcamp-figures p{
+  #bootcamp-figures p {
     font-family: Roboto Mono;
     font-style: normal;
     padding: 10px;
@@ -173,16 +171,16 @@ body{
     padding : 34px;
   }
 
-  .card-project{
+  .card-project {
     border-radius: 6px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
-  .project-image{
+  .project-image {
     width: 100%;
     }
 
-  .card-project h3{
+  .card-project h3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -191,38 +189,54 @@ body{
     margin: 18px 18px 18px 18px;
     }
 
-  #bootcamp-students{
+  #bootcamp-students {
+    width: 100vw;
     padding: 28px;
   }
 
-  .student{
+  .student {
     display: inline-block;
     text-align: center;
-    margin: 10px;
+    padding: 10px;
+    width: 40%;
     }
 
-
-  .student-name{
+  .student-name {
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 18px;
     align-items: center;
     text-align: center;
     }
 
-  #bootcamp-teachers{
-    background-color: #F8F8F8;
+  .student img{
+    width: 100%;
   }
 
-  .teacher{
+  .France {
+    width: 137px;
+    height: 150px;
+  }
+
+  #bootcamp-teachers {
+    background-color: #F8F8F8;
+    width: 100vw;
+    padding: 28px;
+  }
+
+  .teacher {
     display: inline-block;
     text-align: center;
     margin: 10px;
+    width: 40%;
     }
 
+  .teacher img {
+    width: 100%;
+  }
 
-  .teacher-name{
+  .teacher-name {
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: 500;
@@ -231,19 +245,25 @@ body{
     text-align: center;
     }
 
-  footer{
+  footer {
     background: #4DC3F9;
+    height: 220px;
+    width: 100%;
     }
 
-  #CTAbottom{
+  #CTAbottom {
     font-family: Roboto;
     font-size: 21px;
     border-radius: 6px;
-    width: 319px;
-    height: 50px;
+    border: none;
+    text-decoration: none;
+    width: 235px;
+    height: 40px;
     background: #FFFFFF;
+    color: #4DC3F9;
+    display: block;
+    margin: 30px auto;
     }
-
   }
 
 /* Responsive 1440px */
