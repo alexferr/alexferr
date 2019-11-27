@@ -3,26 +3,41 @@
   }
 
   body{
-    margin: 10px;
     width: 100vw;
   }
 
   /* responsive 375px*/
   @media all and (min-width: 375px){
     header {
-      width: 100%;
+      width: 100vw;
+      margin-bottom: -110px;
     }
 
-  #CTAtop{
+  #CTAtop {
     width: 235px;
     height: 40px;
     margin: 30px auto;
-    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
     background: #4DC3F9;
     border: none;
     border-radius: 6px;
     color: #ffffff;
     display: block;
+    transition: width 0.2s, height 0.2s, font-size 0.2s, ease-and-out;
+  }
+
+  #CTAtop:hover {
+    width: 258px;
+    height: 44px;
+    font-size: 21px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   #logo{
@@ -36,6 +51,14 @@
     height: 410px;
     background-image: url("../img/squad.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cohort-title {
+    font-size: 35px;
+    color: white;
   }
 
   .intro-program h1 {
@@ -55,15 +78,15 @@
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
-    line-height: 45px;
+    line-height: 40px;
     align-items: center;
     text-align: center;
     letter-spacing: -0.02em;
     color: #2D354C;
   }
 
-  #bootcamp-program{
-    padding: 0 35px;
+  #bootcamp-program {
+    padding: 20px;
   }
 
   .intro-program p{
@@ -73,15 +96,23 @@
     font-size: 18px;
     line-height: 30px;
     color: #818693;
+    padding: 20px;
+  }
+
+  .card-program-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
   }
 
   .card-program{
     text-align: center;
     background-color: #F8F8F8;
-    padding: 24px;
-    margin-bottom: 35px;
-    width:;
-    height: 230px;
+    width: 90%;
+    margin: 2%;
+    padding: 20px;
     border-radius: 6px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
@@ -171,14 +202,27 @@
     padding : 34px;
   }
 
+  .card-project-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   .card-project {
     border-radius: 6px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 90%;
+    margin: 2%;
     }
 
   .project-image {
     width: 100%;
+    border-radius: 6px;
     }
+
 
   .card-project h3 {
     font-family: Roboto;
@@ -186,69 +230,53 @@
     font-weight: 500;
     font-size: 20px;
     color: #2D354C;
-    margin: 18px 18px 18px 18px;
+    padding: 10px;
     }
 
   #bootcamp-students {
     width: 100vw;
-    padding: 28px;
   }
 
-  .student {
+  .student-wrapper, .teachers-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .student, .teacher {
     display: inline-block;
     text-align: center;
-    padding: 10px;
-    width: 40%;
+    padding: 8px;
     }
 
-  .student-name {
-    font-family: Roboto Mono;
+  .student-name, .teacher-name {
+    font-family: Roboto Mono, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 0;
     }
 
-  .student img{
+  .student-tagline, .teacher-tagline {
+    font-size: 14px;
+    color: #818693;
+  }
+
+  .student img, .teacher img {
     width: 100%;
   }
 
-  .France {
-    width: 137px;
-    height: 150px;
-  }
 
-  #bootcamp-teachers {
-    background-color: #F8F8F8;
+  #bootcamp-teachers, #bootcamp-projects {
     width: 100vw;
-    padding: 28px;
+    padding: 30px 0;
+    background-color: #F8F8F8;
   }
-
-  .teacher {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    width: 40%;
-    }
-
-  .teacher img {
-    width: 100%;
-  }
-
-  .teacher-name {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 35px;
-    align-items: center;
-    text-align: center;
-    }
 
   footer {
     background: #4DC3F9;
-    height: 220px;
-    width: 100%;
+    padding: 20px;
     }
 
   footer h2 {
@@ -256,18 +284,62 @@
   }
 
   #CTAbottom {
-    font-family: Roboto;
-    font-size: 21px;
-    border-radius: 6px;
-    border: none;
-    text-decoration: none;
     width: 235px;
     height: 40px;
-    background: #FFFFFF;
+    margin: 30px auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    background: white;
+    border: none;
+    border-radius: 6px;
     color: #4DC3F9;
     display: block;
-    margin: 30px auto;
-    }
+    transition: width 0.2s, height 0.2s, font-size 0.2s, ease-and-out;
   }
+
+  #CTAbottom:hover {
+    width: 258px;
+    height: 44px;
+    font-size: 21px;
+  }
+  }
+
+@media all and (min-width: 750px) {
+  .cohort-picture {
+    height: 620px;
+  }
+
+  .cohort-title {
+    font-size: 70px;
+  }
+
+  .card-program-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-arround;
+    width: 100vw;
+  }
+  .card-program{
+    width: 35%;
+    margin: 2%;
+  }
+  .figures-wrapper .figure {
+    flex: 25%;
+  }
+  .card-project {
+  width: 25%;
+  margin: 2%;
+  }
+
+  #CTAtop {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
+}
 
 /* Responsive 1440px */
